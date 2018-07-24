@@ -1,3 +1,4 @@
+package firstExcercise;
 
 public class LineItem {
 	private int quantity;

@@ -1,13 +1,15 @@
+package firstExcercise;
+import java.util.Date;
 import java.util.List;
 
 public class Order {
 	private int id;
-	private String DateTime;
+	private Date DateTime;
 	private OrderStatus status;
 	private String shippingAddress;
 	private double total;
 	private List<LineItem> items;
-	public Order(int id, String dateTime, OrderStatus status, String shippingAddress, double total,
+	public Order(int id, Date dateTime, OrderStatus status, String shippingAddress, double total,
 			List<LineItem> items) {
 		super();
 		this.id = id;
@@ -23,10 +25,10 @@ public class Order {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getDateTime() {
+	public Date getDateTime() {
 		return DateTime;
 	}
-	public void setDateTime(String dateTime) {
+	public void setDateTime(Date dateTime) {
 		DateTime = dateTime;
 	}
 	public OrderStatus getStatus() {
@@ -60,7 +62,7 @@ public class Order {
 	
 	public double setTotal(){
 		for (int i=0;i<this.items.size();i++){
-			this.total = this.total + this.items.get(i).getPrice();		
+			this.total = this.total + (this.items.get(i).getQuantity() * this.items.get(i).getPrice());		
 		}
 		return this.total;
 	}

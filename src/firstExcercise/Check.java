@@ -1,3 +1,4 @@
+package firstExcercise;
 
 public class Check extends PaymentMethod{
 	private int number;

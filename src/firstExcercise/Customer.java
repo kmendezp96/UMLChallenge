@@ -1,3 +1,4 @@
+package firstExcercise;
 
 public class Customer {
 	private int id;

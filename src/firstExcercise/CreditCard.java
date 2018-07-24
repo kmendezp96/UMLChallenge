@@ -1,11 +1,14 @@
+package firstExcercise;
+
+import java.util.Date;
 
 public class CreditCard extends PaymentMethod {
 	private double number;
-	private String expDate;
+	private Date expDate;
 	private int maxInstallements;
 	private Issuer issuer;
 	
-	public CreditCard(int id, double number, String expDate, int maxInstallements, Issuer issuer) {
+	public CreditCard(int id, double number, Date expDate, int maxInstallements, Issuer issuer) {
 		super(id);
 		this.number = number;
 		this.expDate = expDate;
@@ -21,11 +24,11 @@ public class CreditCard extends PaymentMethod {
 		this.number = number;
 	}
 
-	public String getExpDate() {
+	public Date getExpDate() {
 		return expDate;
 	}
 
-	public void setExpDate(String expDate) {
+	public void setExpDate(Date expDate) {
 		this.expDate = expDate;
 	}
 
