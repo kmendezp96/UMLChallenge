@@ -1,3 +1,4 @@
+package firstExcercise;
 
 public class PaymentMethod {
 	private int id;

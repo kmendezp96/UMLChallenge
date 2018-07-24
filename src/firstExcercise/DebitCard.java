@@ -1,9 +1,12 @@
+package firstExcercise;
+
+import java.util.Date;
 
 public class DebitCard extends PaymentMethod{
 	private double number;
-	private String expDate;
+	private Date expDate;
 	private Issuer issuer;
-	public DebitCard(int id, double number, String expDate, Issuer issuer) {
+	public DebitCard(int id, double number, Date expDate, Issuer issuer) {
 		super(id);
 		this.number = number;
 		this.expDate = expDate;
@@ -15,10 +18,10 @@ public class DebitCard extends PaymentMethod{
 	public void setNumber(double number) {
 		this.number = number;
 	}
-	public String getExpDate() {
+	public Date getExpDate() {
 		return expDate;
 	}
-	public void setExpDate(String expDate) {
+	public void setExpDate(Date expDate) {
 		this.expDate = expDate;
 	}
 	public Issuer getIssuer() {
