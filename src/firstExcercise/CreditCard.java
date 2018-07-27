@@ -48,6 +48,10 @@ public class CreditCard extends PaymentMethod {
 		this.issuer = issuer;
 	}
 	
+	public void authorize(){
+		System.out.println("Authorized credit card");
+	}
+	
 	
 	
 }

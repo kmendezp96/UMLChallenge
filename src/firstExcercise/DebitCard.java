@@ -31,7 +31,9 @@ public class DebitCard extends PaymentMethod{
 		this.issuer = issuer;
 	}
 	
-	
+	public void authorize(){
+		System.out.println("Authorized debit card");
+	}
 	
 
 }

@@ -29,6 +29,10 @@ public class Check extends PaymentMethod{
 		this.holder = holder;
 	}
 	
+	public void authorize(){
+		System.out.println("Authorized check");
+	}
+	
 	
 
 }

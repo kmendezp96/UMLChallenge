@@ -13,6 +13,9 @@ public class Test {
 		order.addItem(new LineItem(20,3000,new Product("FDFE43DWF4","Leche","bebida")));
 		System.out.println(order.setTotal());
 		
+		order.addItem(new LineItem(1,2000,new Product("FDFE43DWF4","agua","cristal")));
+		System.out.println(order.setTotal());
+		
 	}
 	
 

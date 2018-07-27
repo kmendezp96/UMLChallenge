@@ -1,6 +1,6 @@
 package firstExcercise;
 
-public class PaymentMethod {
+public abstract class PaymentMethod {
 	private int id;
 
 	public PaymentMethod(int id) {
@@ -16,8 +16,6 @@ public class PaymentMethod {
 		this.id = id;
 	}
 	
-	public void authorize(){
-		
-	}
+	public abstract void authorize();
 
 }

@@ -61,6 +61,7 @@ public class Order {
 	}
 	
 	public double setTotal(){
+		this.total = 0;
 		for (int i=0;i<this.items.size();i++){
 			this.total = this.total + (this.items.get(i).getQuantity() * this.items.get(i).getPrice());		
 		}
